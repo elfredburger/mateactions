@@ -34,6 +34,6 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - run: echo ${{ GITHUB_ACTIONS }}
+      - run: echo ${{ env.GITHUB_ACTIONS }}
       - run: echo ${{ github.ref }} ${{ github.repository }}
       - run: echo ${{ github.event_name }}
